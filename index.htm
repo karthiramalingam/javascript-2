@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form,span,p{
+            margin: 30px;
+            
+          
+        }
+        form{
+            line-height: 42px;
+        }
+        .one:hover{
+            color:white;
+            background-color: green;
+
+        }
+        .two:hover{
+            color:white;
+            background-color: green;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        1st number: <input type="text" id="firstNumber"/><br>
+        2nd number: <input type="text" id="secondnumber"/><br>
+        <input type="button" onclick="multiplyBy()" value="Multiply" class="one">
+        <input type="button" onclick="divideBy()" value="Divide" class="two">
+    </form>
+
+    <p>The result is: <br>
+    <span id="result"></span>
+    </p>
+    <script >
+        
+function multiplyBy(){
+num1=document.getElementById("firstNumber").value;
+num2=document.getElementById("secondnumber").value;
+result=document.getElementById("result").innerHTML=num1*num2;
+
+}
+function divideBy(){
+    num1=document.getElementById("firstNumber").value;
+    num2=document.getElementById("secondnumber").value;
+    result=document.getElementById("result").innerHTML=num1/num2;
+    
+    }
+    </script>
+</body>
+</html>
